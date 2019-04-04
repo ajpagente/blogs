@@ -19,3 +19,8 @@ Example output
 04-03 13:50:25.331 5295-5295/com.msg.dummyapp I/dummyapp: PackageInfo{c893c67 com.samsung.android.video}
 04-03 13:50:25.331 5295-5295/com.msg.dummyapp I/dummyapp: PackageInfo{5804a14 com.samsung.location}
 ```
+## Custom NDK Path
+To build libraries using an older NDK version, set the NDK path in the local.properties file
+```
+ndk.dir=../../../../AppData/Local/Android/Sdk/android-ndk-r16b
+```
