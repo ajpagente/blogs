@@ -1,4 +1,12 @@
 # Android
+## ART vs Dalvik
+Android 4.4 introduces a new, experimental runtime called Android RunTime (ART),
+which is expected to replace Dalvik in a future version. While ART brings many
+changes to the current execution environment, most importantly ahead-of-time (AOT)
+compilation, it uses the same zygote-based app process execution model as Dalvik.
+
+ART officially replaced Dalvik in Android 5.0
+
 ## List installed packages
 ```java
     private static final String TAG = "dummyapp";
