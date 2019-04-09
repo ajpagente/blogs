@@ -117,5 +117,14 @@ Could not resolve all files for configuration ':xposed:lintClassPath'.
       project :xposed > com.android.tools.lint:lint-gradle:26.3.2 > com.android.
 tools.external.com-intellij:intellij-core:26.3.2
 ```
-## Fix
+### Fix
 Replace all occurence of **mavenCentral()** in your main build.gradle with **jcenter()**.
+
+## BuildConfig
+I was scratching my head trying to find the BuildConfig class in an Android project I was analyzing. I found this Medium [article](https://medium.com/android-testing-daily/mocking-buildconfig-values-in-unit-tests-57161cea8bc2) that explains at a high level what BuildConfig is. A snippet follows:
+
+```
+BuildConfig is a class containing static constants that is included in every Android application.
+
+BuildConfig includes some default fields such as DEBUG and FLAVOR but you can also add custom values via build.gradle.
+```
